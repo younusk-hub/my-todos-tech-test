@@ -12,7 +12,7 @@ const AddCard = ({handleSubmit}) => {
 
   return (
     <form className='form' onSubmit={handleSubmit}>
-        <input id='name' className='form__input' type="text" value={stringData} onInput={handleInput}/>
+        <input placeholder='Add your task here...' id='name' className='form__input' type="text" value={stringData} onInput={handleInput}/>
         <button className='form__submit' type="submit" >Add Task</button>
     </form>
   )

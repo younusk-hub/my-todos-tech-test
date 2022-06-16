@@ -5,7 +5,7 @@ import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
 
 function App() {
-  const [cardArr, setCardArr] = useState(["adopt a duck", "buy camera"])
+  const [cardArr, setCardArr] = useState(["adopt a duck", "pet a doggo", "eat some bread"])
   console.log(cardArr);
 
   const handleSubmit = event => {
@@ -23,15 +23,32 @@ function App() {
     if (event.target.checked) {
       event.target.parentElement.className += " card-container__card--cross"
     } else {
-      event.target.parentElement.className = " card-container__card"
+      event.target.parentElement.className = "card-container__card"
     }
+  }
+
+  const cleanInput = event => {
+    const input = event.target.innerText.split("")
+    for(let i = 0; i < 7; i++) {
+      input.pop()
+    }
+    console.log(input.join(""));
+    return input.join("")
   }
 
   const handleDelete = event => {
     event.preventDefault();
     console.log(event.target.innerText);
-    const stateCopy = cardArr.map(string => ([...string].join("")))
-    stateCopy.pop(event.target.innerText)
+
+    const input = cleanInput(event)
+
+    let stateCopy = cardArr.map(string => ([...string].join("")))
+
+    stateCopy = stateCopy.filter(string => {
+      if (string !== input) {
+       return string
+      }
+    })
     setCardArr(stateCopy)
   }
 

@@ -15,7 +15,7 @@ const Cards = ({cardArr, handleChange, handleDelete}) => {
 
     const displayInfo = (
         <div>
-            Nothing to see here yet... Add a task in the feild above!
+            Nothing to see here yet... Add a task in the field above!
         </div>
     )
   return (

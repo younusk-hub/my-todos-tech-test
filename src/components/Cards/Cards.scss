@@ -1,18 +1,25 @@
 .card-container {
     display: flex;
     flex-direction: column;
+    
 
     &__card {
         display: flex;
         justify-content: space-around;
         align-items: center;
         border: 2px solid black;
-        margin: 20px;
-        
+        margin: 10px;
+        min-height: 50px;
+        max-width: 300px;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+
         &--cross {
 
             label {
                 text-decoration: line-through;
+
             }
         }
     }
