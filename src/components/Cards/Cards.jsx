@@ -6,12 +6,13 @@ const Cards = ({cardArr, handleChange, handleDelete}) => {
             const joinedString = string.split(" ").join("-")
             return (
                 <form onSubmit={handleDelete}  className='card-container__card'>
-                    <input id={joinedString} type="checkbox" onChange={handleChange} key={index}/>
-                    <label  htmlFor={joinedString}>{string}</label>
+                    <input type="checkbox" onChange={handleChange} key={index}/>
+                    <label className='card-container__card__label' htmlFor={joinedString}>{string}</label>
                     <button type="submit">delete</button>
                 </form>
             )
         });
+
     const displayInfo = (
         <div>
             Nothing to see here yet... Add a task in the feild above!
