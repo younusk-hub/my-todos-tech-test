@@ -1,0 +1,17 @@
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__title {
+        margin: 10px;
+        margin-right: 60px;
+
+    }
+
+    &__reset-button{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
