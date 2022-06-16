@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-todos-tech-test/static/css/main.e6c13ad2.css",
+    "main.js": "/my-todos-tech-test/static/js/main.90cdac97.js",
+    "static/js/787.2ce7dd0d.chunk.js": "/my-todos-tech-test/static/js/787.2ce7dd0d.chunk.js",
+    "index.html": "/my-todos-tech-test/index.html",
+    "main.e6c13ad2.css.map": "/my-todos-tech-test/static/css/main.e6c13ad2.css.map",
+    "main.90cdac97.js.map": "/my-todos-tech-test/static/js/main.90cdac97.js.map",
+    "787.2ce7dd0d.chunk.js.map": "/my-todos-tech-test/static/js/787.2ce7dd0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.90cdac97.js"
+  ]
+}
